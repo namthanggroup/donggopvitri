@@ -2,27 +2,97 @@
 <html lang="vi">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ĐÓNG GÓP VỊ TRÍ</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tra cứu hợp đồng - Rạch Giá</title>
   <style>
-    html, body {
-      margin: 0;
-      padding: 0;
-      height: 100%;
+    body { 
+      margin: 0; padding: 20px; height: 100vh;
+      background: linear-gradient(135deg, #d9fdd3, #f9f9f9);
+      font-family: 'Arial', sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
     }
-    iframe {
-      width: 100%;
-      height: 100%;
+
+    .logo {
+      width: 120px;
+      height: auto;
+      margin-bottom: 20px;
+      animation: fadeInDown 1s ease forwards;
+    }
+
+    h1 {
+      color: #2c3e50;
+      font-size: 22px;
+      margin-bottom: 10px;
+      animation: fadeIn 1.5s ease forwards;
+    }
+
+    .message {
+      color: #555;
+      font-size: 18px;
+      margin-bottom: 30px;
+      padding: 0 10px;
+      animation: fadeIn 2s ease forwards;
+    }
+
+    .button {
+      background-color: #7CFC00;
+      color: white;
+      padding: 16px 24px;
+      font-size: 20px;
       border: none;
+      border-radius: 12px;
+      text-decoration: none;
+      width: 90%;
+      max-width: 300px;
+      transition: background 0.3s, transform 0.2s;
+      animation: fadeInUp 2.5s ease forwards;
+    }
+
+    .button:hover {
+      background-color: #66cc00;
+      transform: scale(1.05);
+    }
+
+    @keyframes fadeInDown {
+      0% { opacity: 0; transform: translateY(-30px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeIn {
+      0% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+
+    @keyframes fadeInUp {
+      0% { opacity: 0; transform: translateY(30px); }
+      100% { opacity: 1; transform: translateY(0); }
     }
   </style>
+  <script>
+    function goToApp() {
+      window.location.href = "https://www.appsheet.com/start/e49684a6-c1be-4da4-8e8f-193ae307c0a9";
+    }
+  </script>
 </head>
 <body>
-  <!-- Phần tiêu đề nằm trên iframe -->
- <h2>  <span style="color: red; font-weight: bold;">APP BẢN ĐỒ HỖ TRỢ TÀI XẾ VÀ CỨU HỘ XE </span>  <br>
-  RẤT MONG ANH/CHỊ/EM TÀI XẾ ĐÓNG GÓP VỊ TRÍ CÁC NƠI ĐẶC BIỆT
-  <span style="color: red; font-weight: bold;">VÁ VỎ/SỬA XE</span> 
-  ĐỂ KHI ĐI ĐẾN ĐÂU CŨNG CÓ SỰ HỖ TRỢ </h2> 
-  </div>  <iframe src="https://www.appsheet.com/start/e49684a6-c1be-4da4-8e8f-193ae307c0a9" allowfullscreen></iframe>
+
+  <!-- Logo -->
+  <img src="logo.png" alt="Logo Nam Thắng" class="logo">
+
+  <!-- Tiêu đề -->
+  <h2>ĐÓNG GÓP VỊ TRÍ HỖ TRỢ TÀI XẾ</h2>
+
+  <!-- Thông báo -->
+  	<h2 style="color:red"></h2>
+
+  <div class="message">Hãy bấm vào nút "Truy cập Ứng dụng" bên dưới để tiếp tục.<br>HÃY CHUNG TAY ĐÓNG GÓP VỊ TRÍ VÁ VỎ, SỬA CHỮA XE ĐỂ HỖ TRỢ CÁC TÀI XẾ</br></div>
+
+  <!-- Nút truy cập -->
+  <button class="button" onclick="goToApp()">Truy cập Ứng dụng</button>
+
 </body>
 </html>
